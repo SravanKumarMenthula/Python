@@ -4,19 +4,19 @@
 Age = 27
 
 
-if Age == 25:
+if Age is 27:
   print("Optimal Age for getting marriage")
-elif Age < 25:
+elif Age < 27:
   print("Too young to get marriage")
 else:
   print("Older than Optimal age")
 
 
-name = 'Dhoni'
+name = 'Sravan'
 
 if name is 'Sravan':
     print("Welcome Sravan!");
-elif name is 'Anusha':
-    print("Welcome Anusha!");
+elif name == 'Dhoni':
+    print("Welcome Dhoni!");
 else:
     print("Welcome! Your good name please?")

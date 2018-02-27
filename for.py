@@ -2,13 +2,13 @@
 #Program to get the understanding of For loop.
 
 #1: Traversal through list
-'''
+
 players = ['Dhoni', 'Kohli', 'Rohit', 'Bumrah', 'Bhuvi']
 
 for p in players:
     print(p + ' country: India',len(p))
     #print(len(p))
-'''
+
 
 #2:
 '''
@@ -23,7 +23,7 @@ for i in range(1,10,2):
 '''
 
 #4 Using the Break statement:
-
+'''
 magic = 26
 
 for i in range(101):
@@ -32,3 +32,4 @@ for i in range(101):
         print("You won't traverse the loop from now on")
         break
     else: print(i,":" + "You haven't reached the number yet!")
+'''
