@@ -3,7 +3,7 @@
 
 #1: Traversal through list
 
-players = ['Dhoni', 'Kohli', 'Rohit', 'Bumrah', 'Bhuvi']
+players = ['Dhoni MS', 'Kohli Virat', 'Rohit Sharma', 'Bumrah', 'Bhuvi']
 
 for p in players:
     print(p + ' country: India',len(p))
