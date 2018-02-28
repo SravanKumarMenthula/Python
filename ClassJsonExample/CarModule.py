@@ -1,5 +1,4 @@
 import json
-from pprint import pprint
 class Car():
     n_wheels = 4
 
@@ -7,7 +6,9 @@ class Car():
     def get_wheels(cls):
         print(cls.n_wheels)
 
-    #def __init__(self):
+    def __init__(self):
+        pass
+
 
     def get_list_data(self):
         list_data = json.load(open('list_info.json'))
@@ -22,7 +23,6 @@ class Car():
         list_data = self.get_list_data()
         self.Brand = input("Enter the Brand:")
         self.Model = input("Enter the Model:")
-
         if self.Brand in list_data.keys(): #Checking whether the Brand is present in the Json file is present
             list1 = list_data[self.Brand]
             logic = 0
@@ -36,11 +36,11 @@ class Car():
             print("List: Sorry, Info about that Brand is Not available")
 
     #If the Json has dictionary of dictonaries
+
     def get_dict_info(self):
         dict_data = self.get_dict_data()
         self.Brand = input("Enter the Brand:")
         self.Model = input("Enter the Model:")
-
         if self.Brand in dict_data.keys():
             if self.Model in dict_data[self.Brand].keys():
                 print(dict_data[self.Brand][self.Model])
@@ -48,12 +48,3 @@ class Car():
                 print("Dict: Sorry, Info about that Model is Not available")
         else:
                 print("Dict: Sorry, Info about that Brand is Not available")
-
-
-
-print("Creating a instance 'p' of Class Car")
-p=Car()
-print("Calling a method which takes the dictionary json file")
-p.get_dict_info()
-print("Calling a method which takes the list json file")
-p.get_list_info()
