@@ -1,0 +1,16 @@
+{
+
+"Toyoto" : {"Innova":"Inn@Toy",
+            "Etios":"Etios-Toy"
+           },
+
+"Honda" :  {"City":"City%Honda",
+            "Amaze":"Amaze&Honda"
+           },
+
+"Tata" :   {"Nano":"1234",
+            "Indica":"7000",
+            "Indigo":"2424"
+           }
+
+}
